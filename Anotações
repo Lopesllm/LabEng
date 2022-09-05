@@ -1,0 +1,28 @@
+Objeto Literal (Props em React)
+São objetos que não tem classe
+var pessoa = {
+  nome:"Fulano" ,
+  sobrenome:"de Tal", 
+  idade:28,
+  nomeCompleto: funtion() {
+      return this.nome + " " + this.sobrenome;
+      }  
+  };
+document.write(pessoa.nomeCompleto());
+  
+  
+Metodos Assessores
+getters e setters
+  function Pessoa () {
+    var nome;
+    this.setNome = function(vNome){
+        this.nome = vNome;
+        }
+    this.getNome = function(){
+        return this.nome;
+        }
+    }
+
+var pessoa = new Pessoa();
+pessoa.setNome("Fulano");
+document.write(pessoa.getNome());
