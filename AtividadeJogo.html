@@ -23,7 +23,7 @@
   </head>
 
   <body>
-      <h1>(Em manutenção)Jogo adivinhe o número</h1>
+      <h1>Jogo adivinhe o número</h1>
 
       <p>Nós selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite foi muito alto ou muito baixo.</p>
 
@@ -40,22 +40,5 @@
 
 </body>
 
-<script>
-    var numeroAleatorio= Math.floor(Math.random() * 100) + 1;
-
-    var palpites = document.querySelector('.palpites');
-    var ultimoResultado = document.querySelector('.ultimoResultado');
-    var baixoOuAlto = document.querySelector('.baixoOuAlto');
-
-    var envioPalpite = document.querySelector('.envioPalpite');
-    var campoPalpite = document.querySelector('.campoPalpite');
-
-    var contagemPalpites = 1;
-    var botaoReinicio;
-
-    function conferirPalpite() {
-        alert('Eu sou um placeholder');
-    }
-  
-</script>
+<script src="scriptJogo.js" defer></script>
 </html>
