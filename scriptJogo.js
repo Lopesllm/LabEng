@@ -43,11 +43,16 @@ var numeroAleatorio= Math.floor(Math.random() * 100) + 1;
     envioPalpite.addEventListener('click', conferirPalpite);
 
     function configFimDeJogo() {
+        //Desabilita a entrada de texto do formulário e o clique do botão.
         campoPalpite.disabled = true;
         envioPalpite.disabled = true;
+        
+        //Gera um elemento <button>, "Iniciar novo jogo", no final do HTML.
         botaoReinicio = document.createElement('button');
         botaoReinicio.textContent = 'Iniciar novo jogo';
         document.body.appendChild(botaoReinicio);
+        
+        //Define um evento(event listener) no botão, executa a função reiniciarJogo()
         botaoReinicio.addEventListener('click', reiniciarJogo);
         }
     
