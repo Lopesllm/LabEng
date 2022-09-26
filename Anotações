@@ -26,3 +26,6 @@ getters e setters
 var pessoa = new Pessoa();
 pessoa.setNome("Fulano");
 document.write(pessoa.getNome());
+
+Projeto 2º Bimestre
+https://pt-br.reactjs.org/tutorial/tutorial.html
